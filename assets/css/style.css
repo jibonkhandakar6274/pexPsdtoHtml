@@ -1,0 +1,531 @@
+/*
+==========================================
+    Reset Css
+==========================================
+*/
+
+/* font-family: 'Open Sans', sans-serif;
+ */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 26px;
+}
+p{
+    font-size: 15px;
+    font-weight: 500;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+
+}
+.container-custom{
+    width: 1600px;
+    margin: 0 auto;
+}
+.ml-100{
+    margin-left: 100px !important;
+}
+.ml-80{
+    margin-left:80px !important;
+}
+.container-980{
+    width:850px;
+    margin: 0 auto;
+}
+/* header Start */
+header{
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid #3b2c3c;
+    margin:0;
+    padding: 0;
+    z-index: 9999;
+}
+.navbar-brand img{
+    width: 100%;
+}
+.bg-light {
+	background-color: transparent !important;
+}
+.nav-item {
+	margin: 0px 10px !important;
+}
+.nav-link {
+	color: #fff !important;
+	font-size: 15px !important;
+	font-weight: 600 !important;
+	padding: 40px 0;
+	position: relative;
+	transition: all .4s ease-in;
+}
+.nav-link::after {
+	position: absolute;
+	content: '';
+	bottom: -8px;
+	width: 100%;
+	height: 3px;
+	background: #fff;
+	left: 0;
+	right: 0;
+	margin: auto;
+	transform-origin: right;
+    transform: scale(0);
+    transition: transform 300ms ease-in;
+}
+.nav-link:hover::after{
+    transform-origin: left;
+    transform: scale(1);
+}
+.navbar form {
+	border: 1px solid #626262;
+	background: #fff;
+	padding: 10px 20px;
+	border-radius: 50px;
+}
+.navbar input{
+	color: #626262;
+	background-color: transparent;
+	border: none;
+    border-radius: 0;
+}
+.navbar button{
+    background : transparent !important;
+    border: none;
+}
+.navbar button i {
+	background: transparent;
+	color: #626262;
+}
+.navbar button:focus{
+    border:none;
+}
+/* header End */
+/* banner Start */
+#banner{
+    background: url('../image/banner.png');
+    height: 100vh;
+    width:100%;
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    position: relative;
+    background-attachment: fixed;
+}
+
+#banner::before{
+    position: absolute;
+    content: '';
+    top:0;
+    left:0;
+    height: 100%;
+    width:100%;
+    background: rgba(0, 0, 0, 0.5)
+}
+
+.banner-content {
+	text-align: right;
+	position: absolute;
+	content: '';
+	top: 50%;
+	left: 30%;
+	transform: translate(-50%,-50%);
+}
+.banner-content h2 {
+	font-size: 50px;
+	line-height: 65px;
+	padding-top: 118px;
+}
+ a.pill-button {
+	display: inline-block;
+	margin-top: 40px;
+	margin-bottom: 15px;
+	padding: 15px 60px;
+	background: #8824cd;
+	box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+	border-radius: 50px;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 600;
+    text-decoration: none;
+    position: relative;
+    z-index:1;
+    transition: all .4s ease;
+}
+a.pill-button::before{
+    position: absolute;
+    content: '';
+    top:0;
+    right: 0;
+    height:100%;
+    width: 100%;
+    background:#fff;
+    border-radius:50px;
+    z-index:-1;
+    transform-origin: top;
+    transform: scale(0);
+    transition: 1000ms ease;
+}
+a.pill-button:hover{
+    color:#000;
+}
+a.pill-button:hover::before{
+    transform:scale(1);
+}
+.banner-content p {
+	font-size: 12px;
+	color: #fff;
+	font-weight: 500;
+}
+/* banner End */
+
+/* service Start */
+#services{
+    background: #2e3b4e;
+    padding-bottom : 50px;
+}
+.service-content{
+    padding: 0px 10px;
+    color:#fff;
+    margin-top: 50px;
+}
+.service-content h4{
+    font-size: 16px;
+    font-weight: 700;
+}
+.service-content p {
+	font-size: 13px;
+	margin-top: 15px;
+}
+/* service End */
+
+/* wicked & Whack Section Start */
+#whicked{
+    background: url('../image/bg-1.jpg');
+    padding: 150px 0;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    overflow: hidden;
+    text-align: center;
+    width:100%;
+}
+#whicked::before{
+    position: absolute;
+    content: '';
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background: rgba(231,82,107,0.8);
+}
+.title{
+    text-align: center;
+    color: #fff;
+}
+.title h3{
+    font-size: 35px;
+}
+
+.title p{
+    padding-top:20px;
+    padding-bottom: 30px;
+}
+.shape {
+	text-align: center;
+	position: absolute;
+	top: -37px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+#whicked a.pill-button {
+	margin: 0;
+	padding: 15px 80px;
+	background: #fff;
+	color: #d54c63;
+	box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
+	position: relative;
+	z-index: 1;
+	transition: all .4s ease;
+}
+#whicked a.pill-button::before{
+    position: absolute;
+    content: '';
+    top:0;
+    right: 0;
+    height:100%;
+    width: 100%;
+    background:#2e3b4e;
+    border-radius:50px;
+    z-index:-1;
+    transform-origin: top !important;
+    transform: scale(0);
+    transition: 1000ms ease;
+}
+#whicked a.pill-button:hover{
+    color:#fff;
+}
+#whicked a.pill-button:hover::before{
+    transform:scale(1);
+}
+/* wicked & Whack Section End */
+
+/* what you need here Start */
+#what-u-need{
+    position: relative;
+}
+.what-need-left-img{
+    background:url('../image/about-img.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: top center;
+    position: absolute;
+    left:0;
+    height: 100%;
+}
+.what-need-left-img img {
+	width: 100%;
+	object-fit: cover;
+}
+.what-need-right-content {
+	padding: 84px 100px;
+}
+.what-need-right-content h4{
+    font-size: 18px;
+    font-weight: 700;
+}
+.what-need-right-content p{
+   font-size: 15px;
+   margin-top:20px;
+}
+.what-need-right-content p:last-child{
+   font-size: 13px;
+}
+/* what you need here End */
+
+/* experience section Start */
+#experience{
+    background: url('../image/bg-2.jpg');
+    padding: 150px 0;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    overflow: hidden;
+    text-align: center;
+    width:100%;
+}
+#experience::before{
+    position: absolute;
+    content: '';
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background: rgba(76,32,92,0.8);
+}
+#experience .title{
+    text-align: center;
+    color: #fff;
+}
+#experience .title h3{
+    font-size: 35px;
+}
+
+#experience .title p {
+	padding: 20px 150px 30px 150px;
+}
+#experience a.pill-button {
+	margin: 0;
+	padding: 15px 80px;
+	background: #8824cd;
+	color: #fff;
+	box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
+	position: relative;
+	z-index: 1;
+	transition: all .4s ease;
+}
+#experience a.pill-button::before{
+    position: absolute;
+    content: '';
+    top:0;
+    right: 0;
+    height:100%;
+    width: 100%;
+    background:#fff;
+    border-radius:50px;
+    z-index:-1;
+    transform-origin: top !important;
+    transform: scale(0);
+    transition: 1000ms ease;
+}
+#experience a.pill-button:hover{
+    color:#000;
+}
+#experience a.pill-button:hover::before{
+    transform:scale(1);
+}
+.bottom-p{
+    font-size: 13px;
+    color: #fff;
+    margin-top:10px;
+}
+/* experience section End */
+
+/* photography-section Start */
+#photography{
+    background: url('../image/bg-3.jpg');
+    background-size:cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 100px 0 60px;
+    background-attachment: fixed;
+}
+.photography-content{
+    padding-top:150px;
+}
+#photography::before{
+    position: absolute;
+    content: '';
+    top:0;
+    left:0;
+    height: 100%;
+    width:100%;
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.3),rgba(0,0,0,0.8));
+}
+#photography a.pill-button{
+    background: transparent;
+    border: 1px solid #fff;
+    margin-bottom:0;
+    padding: 10px 30px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#photography img{
+    height: 50px;
+    width:50px;
+    object-fit: cover;
+    border-radius:50%;
+    float:left;
+    margin-right:20px;
+}
+#photography h3{
+    font-size: 30px;
+    line-height: 40px;
+    margin: 20px 0;
+    color: #fff;
+    font-weight: 500;
+}
+#photography p {
+	color: #fff;
+	margin-top: 30px;
+}
+
+/* photography-section End */
+
+/* what you need here two Start */
+#what-u-need2{
+    position: relative;
+}
+#what-u-need2 .what-need-left-img{
+    background:url('../image/about-img-2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: top center;
+    position: absolute;
+    left:0;
+    height: 100%;
+}
+#what-u-need2 .what-need-left-img img {
+	width: 100%;
+	object-fit: cover;
+}
+#what-u-need2 .what-need-right-content {
+	padding: 84px;
+    padding-left: 100px; 
+    padding-right: 50px;
+}
+#what-u-need2 .what-need-right-content h4{
+    font-size: 18px;
+    font-weight: 700;
+}
+#what-u-need2 .what-need-right-content p{
+   font-size: 15px;
+   margin-top:20px;
+}
+#what-u-need2 .what-need-right-content p:last-child{
+   font-size: 13px;
+}
+/* what you need here two End */
+
+
+/* get in touch Start */
+#get-in-touch{
+    background: #d54c63;
+    padding: 100px 0;
+}
+#get-in-touch h2{
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+#get-in-touch p{
+    font-size: 15px;
+    font-weight: 500;
+    margin: 20px 0;
+    color: #fff;
+}
+#get-in-touch a{
+    font-size: 16px;
+    color:#fff;
+    text-decoration: none;
+}
+/* get in touch End */
+
+/* footer Start */
+footer{
+    background: #2e3b4e;
+    color: #fff;
+    font-size: 15px;
+    padding: 80px 0;
+}
+footer a{
+    text-decoration: none;
+    color: #d54c63;
+}
+/* footer End */

@@ -1,0 +1,6 @@
+{
+    "editor.wrappingIndent": "indent",
+    "html.format.indentHandlebars": true,
+    "html.format.indentInnerHtml": true,
+    "editor.formatOnSave": true
+}
