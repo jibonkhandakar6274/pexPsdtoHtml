@@ -109,7 +109,8 @@ header{
 	border: 1px solid #626262;
 	background: #fff;
 	padding: 10px 20px;
-	border-radius: 50px;
+    border-radius: 50px;
+    margin-top: 25px;
 }
 .navbar input{
 	color: #626262;
@@ -120,6 +121,10 @@ header{
 .navbar button{
     background : transparent !important;
     border: none;
+}
+.navbar-icon i {
+    color: #fff !important;
+    font-size: 30px;
 }
 .navbar button i {
 	background: transparent;
@@ -148,16 +153,16 @@ header{
     left:0;
     height: 100%;
     width:100%;
-    background: rgba(0, 0, 0, 0.5)
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .banner-content {
-	text-align: right;
-	position: absolute;
-	content: '';
-	top: 50%;
-	left: 30%;
-	transform: translate(-50%,-50%);
+    text-align: right;
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 136px;
+    transform: translateY(-50%);
 }
 .banner-content h2 {
 	font-size: 50px;
@@ -211,9 +216,13 @@ a.pill-button:hover::before{
 #services{
     background: #2e3b4e;
     padding-bottom : 50px;
+    position: relative;
+}
+.services-inner {
+    margin: 0px 140px;
 }
 .service-content{
-    padding: 0px 10px;
+    /* padding: 0px 10px; */
     color:#fff;
     margin-top: 50px;
 }
@@ -222,8 +231,18 @@ a.pill-button:hover::before{
     font-weight: 700;
 }
 .service-content p {
-	font-size: 13px;
-	margin-top: 15px;
+	font-size: 14px;
+    margin-top: 15px;
+    font-weight: 300;
+}
+.shape {
+    text-align: center;
+    position: absolute;
+    content: '';
+    bottom: -34px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
 }
 /* service End */
 
@@ -261,13 +280,7 @@ a.pill-button:hover::before{
     padding-top:20px;
     padding-bottom: 30px;
 }
-.shape {
-	text-align: center;
-	position: absolute;
-	top: -37px;
-	left: 50%;
-	transform: translateX(-50%);
-}
+
 #whicked a.pill-button {
 	margin: 0;
 	padding: 15px 80px;
@@ -304,22 +317,16 @@ a.pill-button:hover::before{
 #what-u-need{
     position: relative;
 }
-.what-need-left-img{
-    background:url('../image/about-img.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    background-position: top center;
-    position: absolute;
-    left:0;
-    height: 100%;
+
+#what-u-need .col-md-5 {
+    padding-left: 0px !important;
 }
 .what-need-left-img img {
 	width: 100%;
 	object-fit: cover;
 }
 .what-need-right-content {
-	padding: 84px 100px;
+	padding: 70px 100px;
 }
 .what-need-right-content h4{
     font-size: 18px;
@@ -461,7 +468,7 @@ a.pill-button:hover::before{
 #what-u-need2{
     position: relative;
 }
-#what-u-need2 .what-need-left-img{
+/* #what-u-need2 .what-need-left-img{
     background:url('../image/about-img-2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -470,13 +477,17 @@ a.pill-button:hover::before{
     position: absolute;
     left:0;
     height: 100%;
+} */
+#what-u-need2 .col-md-5{
+    padding-right: 0px !important;
 }
 #what-u-need2 .what-need-left-img img {
 	width: 100%;
 	object-fit: cover;
 }
 #what-u-need2 .what-need-right-content {
-	padding: 84px;
+    padding-top : 70px;
+    padding-bottom:70px ;
     padding-left: 100px; 
     padding-right: 50px;
 }
